@@ -1104,7 +1104,8 @@ img {
 
 /* Hero section */
 .hero {
-    margin-bottom: 2.5em; }
+    margin-bottom: 2.5em;
+    text-align: justify; }
 
 .hero-title {
     font-size: 2.66667rem;

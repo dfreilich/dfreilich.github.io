@@ -6,3 +6,4 @@ menus:
     title: Blog
 template: blog
 ---
+Stuff

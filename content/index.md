@@ -5,13 +5,13 @@ sections:
     component: "hero_block.html"
     type: heroblock
     content: |-
-      This section can contain a subtitle or tagline. The recommended length is one to three sentences, but can be changed as you prefer.
+      I'm a software engineer, currently working in [VMware's Tanzu division](https://cloud.vmware.com/tanzu), building [Cloud Native Buildpacks](https://buildpacks.io/). I'm interested in Go, Machine Learning, and Agile methodologies, and I enjoy the use of an [Oxford comma](https://www.grammarly.com/blog/what-is-the-oxford-comma-and-why-do-people-care-so-much-about-it/). [Shoot me a message](contact) if you agree, disagree, or just want connect.
   - section_id: about
     component: "content_block.html"
     type: contentblock
     title: About
     content: |-
-      This is the "about" excerpt. It can be used to provide a paragraph about yourself that people can read on the homepage to get a sense of who you are. There also exists a dedicated about page where you can write more about yourself for those who are interested.
+      I'm a [CMU-SV](https://sv.cmu.edu/) and [Yeshiva University](https://www.yu.edu/yeshiva-college/ug/computer-science) alumnus, and a current NJ resident. I've worked in a buncha places, doing a bunch of cool things, and I enjoy writing about things that I'm reading and doing.
     actions:
     - label: Contact Me
       url: "/contact"
