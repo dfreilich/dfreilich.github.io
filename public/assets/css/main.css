@@ -956,7 +956,8 @@ img {
  */
 .post {
     margin-bottom: 3.33333em;
-    position: relative; }
+    position: relative;
+    text-align: justify; }
 
 .post-header {
     margin-bottom: 1.66667em; }
@@ -1118,7 +1119,8 @@ img {
 
 /* Content blocks */
 .block {
-    margin-bottom: 5em; }
+    margin-bottom: 5em;
+    text-align: justify; }
 
 .block.read-next {
     margin-bottom: 3.33333em;
