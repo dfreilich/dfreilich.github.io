@@ -3,4 +3,8 @@
 rm -rf public
 npm run build
 cp CNAME README.md public/
-npm run deploy
+
+if [[ $* == *--push* ]]; then
+    echo "running npm deploy"
+    npm run deploy
+fi
