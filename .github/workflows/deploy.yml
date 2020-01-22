@@ -1,6 +1,9 @@
 name: CI
 
-on: [push]
+on:
+  push:
+    branches:
+      - src
 
 jobs:
   build:
@@ -18,5 +21,13 @@ jobs:
             ${{ runner.os }}-
     - name: Install Dependencies
       run: npm install
-    - name: Deploy website
-      run: ./scripts/deploy.sh
+    - name: Build website
+      run: ./scripts/build.sh
+    - name: Deploy to Pages
+      uses: peaceiris/actions-gh-pages@v2
+      env:
+        ACTIONS_DEPLOY_KEY: ${{ secrets.ACTIONS_DEPLOY_KEY }}
+        PUBLISH_BRANCH: master
+        PUBLISH_DIR: ./public
+      with:
+        emptyCommits: false
