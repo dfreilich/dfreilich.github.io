@@ -2,7 +2,7 @@
 
 rm -rf public
 npm run build
-cp CNAME README.md public/
+cp CNAME README.md sitemap.xml public/
 
 if [[ $* == *--push* ]]; then
     echo "running npm deploy"
