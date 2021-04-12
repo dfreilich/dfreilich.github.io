@@ -21,7 +21,7 @@
 <link rel="icon" type="image/png" sizes="32x32" href="images/favicon/favicon-32x32.png">
 <link rel="icon" type="image/png" sizes="16x16" href="images/favicon/favicon-16x16.png">
 <link rel="manifest" href="images/favicon/site.webmanifest">
-
+<script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
 
 
         
@@ -91,6 +91,10 @@
   <a href="https://www.instagram.com/dfrey1/" target="_blank" rel="noopener"><span class="fab fa-instagram" aria-hidden="true"></span><span class="screen-reader-text">Instagram</span></a>
   
   
+  
+  <a href="https://twitter.com/dfreilich" target="_blank" rel="noopener"><span class="fab fa-twitter" aria-hidden="true"></span><span class="screen-reader-text">Twitter</span></a>
+  
+  
 </div><!-- .social-links -->
 
             
@@ -116,7 +120,7 @@
   <div class="post-content">
     <p>To get in touch, <a href="mailto:freilich.david@gmail.com">send me an email</a>, or just fill the form below.</p>
 
-    <form name="contactForm" method="POST" netlify-honeypot="bot-field" data-netlify="true" id="contact-form"
+    <form name="contactForm" action="https://formspree.io/f/xpzkzeyg" method="POST" accept-charset="utf-8" netlify-honeypot="bot-field" data-netlify="true" id="contact-form"
       class="contact-form">
       <p class="screen-reader-text">
         <label>Don't fill this out if you're human: <input name="bot-field" /></label>
@@ -135,8 +139,9 @@
       </p>
       <input type="hidden" name="form-name" value="contactForm" />
       <p class="form-row">
-        <button type="submit" class="button">Send Message</button>
+        <button id="sendMessage" type="submit" class="button">Send Message</button>
       </p>
+      <p id="my-form-status"></p>
     </form><!-- .contact-form -->
   </div><!-- .post-content -->
 </article><!-- .post -->
