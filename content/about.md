@@ -13,4 +13,4 @@ template: page
 
 >The world always seems brighter when you’ve just made something that wasn’t there before. <cite>Neil Gaiman</cite>
 
-David enjoys reading fiction, studying the [Talmud](https://en.wikipedia.org/wiki/Daf_Yomi), and traveling. He lives in Israel with his beautiful wife and daughter.
+David enjoys reading fiction, studying the [Talmud](https://en.wikipedia.org/wiki/Daf_Yomi), and traveling. 
