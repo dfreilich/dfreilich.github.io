@@ -1,6 +1,10 @@
 {
   "name": "fresh",
   "version": "1.0.0",
+  "engines": {
+    "node": ">=14 <16",
+    "npm": "~6"
+  },
   "description": "A personal site/blog for David Freilich",
   "main": "public/index.html",
   "scripts": {

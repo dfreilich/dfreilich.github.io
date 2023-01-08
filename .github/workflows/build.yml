@@ -21,6 +21,9 @@ jobs:
           python-version: '2.7'
       - name: Test python2
         run: python2 --version
+      - uses: actions/setup-node@v3
+        with:
+          node-version: 14
       - name: Install Dependencies
         run: npm install
       - name: Build website
