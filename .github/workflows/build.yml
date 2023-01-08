@@ -4,9 +4,9 @@ on: [pull_request]
 
 jobs:
   build:
-    runs-on: ubuntu-latest
+    runs-on: ubuntu-20.04
     steps:
-      - uses: actions/checkout@v1
+      - uses: actions/checkout@v3
       - name: Cache node modules
         uses: actions/cache@v1
         with:
@@ -16,8 +16,9 @@ jobs:
             ${{ runner.os }}-build-${{ env.cache-name }}-
             ${{ runner.os }}-build-
             ${{ runner.os }}-
-      - name: Install python2
-        run: apt update && DEBIAN_FRONTEND=noninteractive apt install -y python2 make g++
+      - uses: actions/setup-python@v4
+        with:
+          python-version: '2.7'
       - name: Test python2
         run: python2 --version
       - name: Install Dependencies
